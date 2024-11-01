@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  goToLink(url: string){
+    window.open(url, "_blank");
+  }
+
 }

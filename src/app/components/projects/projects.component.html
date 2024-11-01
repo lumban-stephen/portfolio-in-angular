@@ -1,11 +1,22 @@
 <div class="vh-100">
     <div class="float-left">
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="main-card"></div>
+        <div class="cards">
+            <div class="project-card">
+                <h2>PROJECT TITLE</h2>
+                <p>Description here</p>
+                <a (click)='goToLink("")'>View Project</a>
+            </div>
+            <div class="project-card">
+                <h2>PROJECT TITLE</h2>
+                <p>Description here</p>
+                <a (click)='goToLink("")'>View Project</a>
+            </div>
+        </div>
+        <div class="main-card">sadadd</div>
     </div>
     <div class="float-right">
         <h1>My Works</h1>
-        <a href="https://www.github.com">View Github</a>
+        <p>As I continue on my path to become a Full Stack Developer, you can view the projects I have worked on, in this page.</p>
+        <a (click)='goToLink("https://github.com/lumban-stephen")'>View Github</a>
     </div>
 </div>
