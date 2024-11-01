@@ -1,0 +1,35 @@
+.vh-30 {
+    height: 30vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 0.25rem;
+}
+
+ul li:nth-child(1) {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.uls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

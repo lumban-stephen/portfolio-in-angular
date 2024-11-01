@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +10,9 @@ export class HomeComponent {
   
   toggleVideo(hovered: boolean): void {
     this.isHovered = hovered;
+  }
+
+  goToLink(url: string): void {
+    window.open(url, '_blank');
   }
 }

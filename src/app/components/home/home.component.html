@@ -8,12 +8,32 @@
         <h1 (mouseenter)="toggleVideo(true)" (mouseleave)="toggleVideo(false)">Need a Developer?</h1>
     <div class="sub-container">
         <ul>
-            <li><img src="https://iconape.com/wp-content/files/mm/370537/svg/angular-icon-logo-icon-png-svg.png" alt="" class="tech-stack"></li>
-            <li><img src="https://iconape.com/wp-content/files/ec/371378/svg/371378.svg" alt="" class="tech-stack"></li>
-            <li><img src="https://iconape.com/wp-content/files/fo/371358/svg/371358.svg" alt="" class="tech-stack"></li>
-            <li><img src="https://iconape.com/wp-content/files/ej/371250/svg/371250.svg" alt="" class="tech-stack"></li>
-            <li><img src="https://iconape.com/wp-content/png_logo_vector/c-sharp-c-logo.png" alt="" class="tech-stack"></li>
-            <li><img src="https://iconape.com/wp-content/png_logo_vector/mysql-3.png" alt="" class="tech-stack"></li>
+            <li>
+                <a (click)='goToLink("https://angular.dev/")'>
+                    <img src="https://iconape.com/wp-content/files/mm/370537/svg/angular-icon-logo-icon-png-svg.png" alt="" class="tech-stack"> 
+                </a>
+            </li>
+            <li>
+                <a (click)='goToLink("https://react.dev/")'>
+                    <img src="https://iconape.com/wp-content/files/ec/371378/svg/371378.svg" alt="" class="tech-stack">
+                </a>
+            </li><li>
+                <a (click)='goToLink("https://www.python.org/")'>
+                    <img src="https://iconape.com/wp-content/files/fo/371358/svg/371358.svg" alt="" class="tech-stack"> 
+                </a>
+            </li><li>
+                <a (click)='goToLink("https://mui.com/")'>
+                    <img src="https://iconape.com/wp-content/files/ej/371250/svg/371250.svg" alt="" class="tech-stack"> 
+                </a>
+            </li><li>
+                <a (click)='goToLink("https://dotnet.microsoft.com/en-us/")'>
+                    <img src="https://iconape.com/wp-content/png_logo_vector/c-sharp-c-logo.png" alt="" class="tech-stack"> 
+                </a>
+            </li><li>
+                <a (click)='goToLink("https://www.mysql.com/")'>
+                    <img src="https://iconape.com/wp-content/png_logo_vector/mysql-3.png" alt="" class="tech-stack"> 
+                </a>
+            </li>
         </ul>
         <div class="scroll-icon">
             <img src="../../../assets/images/black-mouse.png" alt="" id="mouse-icon">
@@ -21,5 +41,4 @@
         </div>
     </div>
     </div>
-    
 </div>

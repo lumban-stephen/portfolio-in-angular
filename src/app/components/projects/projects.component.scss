@@ -2,6 +2,8 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    box-sizing: border-box;
+    border-top: solid 1px rgb(228, 227, 227);
 }
 
 .vh-100 .float-left {
@@ -12,10 +14,10 @@
 
 .project-card {
     display: flex;
-    background-color: green;
+    background-color: white;
     width: 50%;
     height: 100%;
-    border: solid 3px red;
+    
 }
 
 .vh-100 .float-right {
@@ -32,8 +34,9 @@
 }
 
 .main-card {
-    background-color: purple;
+    background-color: black;
     height: 100%;
+    color: white;
 }
 
 h1 {
@@ -46,7 +49,7 @@ a {
     border: solid 3px black;
     padding: 2rem;
     align-self: center;
-    margin-bottom: 20%;
+    margin-bottom: 4rem;
     color: black;
     text-decoration: none;
     font-weight: 600;
@@ -62,8 +65,77 @@ a:hover {
 
 
 p {
-    font-size: 64px;
+    font-size: 52px;
     margin: 0 4rem;
     text-align: justify;
     text-indent: 6rem;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 3rem 0 3rem;
+}
+
+.project-card a {
+    display: flex;
+    align-self: flex-end;
+    background-color: white;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    height: 100%; /* Ensure it takes full height */
+}
+
+.main-card h2, .main-card p {
+    margin: 0;
+    flex-grow: 1; /* Allows title and description to take up available space */
+}
+
+.main-card a {
+    display: flex;
+    align-self: flex-end; /* Align the link to the left */
+    margin-top: auto; /* Push the link to the bottom */
+    padding: 1rem;
+    border: solid 3px black;
+    padding: 2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 5rem;
+    background-color: white;
+}
+
+.main-card a:hover {
+    opacity: 1;
+    font-weight: 900;
+    border: solid 5px black;
+    cursor: pointer;
+}
+
+#card-1 {
+    background-image: url("../../../assets/images/basichtmlcsssc.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+#card-2 { 
+    border: solid 2px black;
+    border-top: solid 1px rgb(228, 227, 227);
+}
+
+.float-right a:hover ~ a {
+    color: white;
+    background-color: black;
 }

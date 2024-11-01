@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+// projects.component.ts
+import { Component, OnInit } from '@angular/core';
+
+interface Project {
+  title: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
 
-  goToLink(url: string){
-    window.open(url, "_blank");
+  goToLink(url: string): void {
+    window.open(url, '_blank');
   }
-
 }
