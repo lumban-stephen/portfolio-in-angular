@@ -1,0 +1,39 @@
+.navbar {
+    min-height: 20vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 3rem;
+}
+
+ul {
+    float: right;
+    display: flex;
+    gap: 6rem;
+    margin-left: 4rem; 
+}
+
+li {
+    gap: 2rem;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing:0.04cm;
+    opacity: 0.8;
+}
+
+li a:hover {
+    font-weight:900;
+    transition: 2s ease;
+    opacity: 1;
+}
+
+img {
+    float: left;
+}

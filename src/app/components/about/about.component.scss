@@ -1,0 +1,94 @@
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-size: 72px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+p {
+    font-size: 36px;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    border: solid gray 1px;
+} 
+
+.float-left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    max-width: 30%;
+    margin-left: 6rem;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.float-left p {
+    padding: 0 2rem;
+    line-height: 4rem;
+    text-align: justify;
+    max-width: 90%;
+}
+
+.white-btn {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    max-width: 60%;
+    padding: 2rem;
+    margin-right: 6rem;
+    border: solid 4px black;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.white-btn:hover {
+    font-weight: bolder;
+    transition: 500ms ease-in-out;
+    opacity: 1;
+}
+
+.float-right {
+    background-color: black;
+    color: white;
+}
+
+.float-right p {
+    padding: 0 2rem;
+    line-height: 3.5rem;
+    text-align: justify;
+    max-width: 90%;
+    float: right;
+    text-align: right;
+}
+
+
+.why-tech h2{
+    float: right;
+    padding: 0 2rem 3rem 0;
+}
+
+.why-tech p {
+    margin-top: -2rem;
+}

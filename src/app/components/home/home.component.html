@@ -1,0 +1,25 @@
+<div class="container content">
+    <video autoplay muted loop [class.video-active]="isHovered" id="myVideo">
+        <source src="../../../assets/videos/779e23d5-7229-46ef-be0a-828db9548c34.mp4" type="video/mp4">
+    </video>
+
+    <app-header></app-header>
+    <div class="common-parent">
+        <h1 (mouseenter)="toggleVideo(true)" (mouseleave)="toggleVideo(false)">Need a Developer?</h1>
+    <div class="sub-container">
+        <ul>
+            <li><img src="https://iconape.com/wp-content/files/mm/370537/svg/angular-icon-logo-icon-png-svg.png" alt="" class="tech-stack"></li>
+            <li><img src="https://iconape.com/wp-content/files/ec/371378/svg/371378.svg" alt="" class="tech-stack"></li>
+            <li><img src="https://iconape.com/wp-content/files/fo/371358/svg/371358.svg" alt="" class="tech-stack"></li>
+            <li><img src="https://iconape.com/wp-content/files/ej/371250/svg/371250.svg" alt="" class="tech-stack"></li>
+            <li><img src="https://iconape.com/wp-content/png_logo_vector/c-sharp-c-logo.png" alt="" class="tech-stack"></li>
+            <li><img src="https://iconape.com/wp-content/png_logo_vector/mysql-3.png" alt="" class="tech-stack"></li>
+        </ul>
+        <div class="scroll-icon">
+            <img src="../../../assets/images/black-mouse.png" alt="" id="mouse-icon">
+            <p>Scroll down to see more</p>
+        </div>
+    </div>
+    </div>
+    
+</div>
