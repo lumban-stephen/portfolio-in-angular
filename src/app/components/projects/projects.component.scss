@@ -124,10 +124,18 @@ h2 {
 }
 
 #card-1 {
-    background-image: url("../../../assets/images/basichtmlcsssc.png");
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-color: white;
+    color: black;
+}
+
+#card-1:hover {
+    background-color: rgb(4, 56, 115);
     color: white;
+    a:hover {
+        background-color: white;
+        color: rgb(4, 56, 115);
+        border: solid 3px white;
+    }
 }
 
 #card-2 { 
