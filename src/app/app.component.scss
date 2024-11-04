@@ -1,6 +1,11 @@
 /* app.component.scss */
-html {
-    scroll-behavior: smooth; // Remove this if using custom scroll-behavior
-  }
-  
- 
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.snap-section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+}
