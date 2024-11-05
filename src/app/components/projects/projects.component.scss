@@ -96,32 +96,45 @@ h2 {
     height: 100%; /* Ensure it takes full height */
 }
 
+.main-card:hover {
+    background-color: white;
+    color: black;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    h2 {
+        font-size: 128px;
+    }
+    a {
+        display: none;
+    }
+}
+
 .main-card h2, .main-card p {
     margin: 0;
     flex-grow: 1; /* Allows title and description to take up available space */
 }
 
-.main-card a {
-    display: flex;
-    align-self: flex-end; /* Align the link to the left */
-    margin-top: auto; /* Push the link to the bottom */
-    padding: 1rem;
-    border: solid 3px black;
-    padding: 2rem;
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0.7;
-    margin-bottom: 5rem;
-    background-color: white;
-}
+// .main-card a {
+//     display: flex;
+//     align-self: flex-end; /* Align the link to the left */
+//     margin-top: auto; /* Push the link to the bottom */
+//     padding: 1rem;
+//     border: solid 3px black;
+//     padding: 2rem;
+//     color: black;
+//     text-decoration: none;
+//     font-weight: 600;
+//     opacity: 0.7;
+//     margin-bottom: 5rem;
+//     background-color: white;
+// }
 
-.main-card a:hover {
-    opacity: 1;
-    font-weight: 900;
-    border: solid 5px black;
-    cursor: pointer;
-}
+// .main-card a:hover {
+//     opacity: 1;
+//     font-weight: 900;
+//     border: solid 5px black;
+//     cursor: pointer;
+// }
 
 #card-1 {
     background-color: white;
@@ -139,8 +152,14 @@ h2 {
 }
 
 #card-2 { 
-    border: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
     border-top: solid 1px rgb(228, 227, 227);
+}
+
+#card-2 a{
+    background-color: rgb(4, 56, 115, 0.5);
+    color: white;
 }
 
 .float-right a:hover ~ a {
