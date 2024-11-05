@@ -16,6 +16,10 @@ export class AppComponent implements AfterViewInit {
     this.addSmoothScroll();
   }
 
+  goToLink(url: string): void {
+    window.open(url, '_blank');
+  }
+
   addSmoothScroll() {
     const container = this.snapContainer.nativeElement;
 

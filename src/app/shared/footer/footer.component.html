@@ -26,14 +26,14 @@
       </ul>
       
       <!-- Logo in the Center -->
-      <img src="../../../assets/images/whiteLogo.png" alt="logo" />
+      <img (click)="smoothScrollTo('app-home', $event)" src="../../../assets/images/whiteLogo.png" alt="logo" />
   
       <!-- Right Column for Social Links -->
       <ul>
         <li>Connect</li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a (click)="goToLink('https://github.com/lumban-stephen') ">Github</a></li>
+        <li><a (click)="goToLink('https://www.linkedin.com/in/lumbanstephen/') ">LinkedIn</a></li>
+        <li><a (click)="goToLink('https://www.facebook.com/lmbnstpn') ">Facebook</a></li>
       </ul>
     </div>
   </div>
