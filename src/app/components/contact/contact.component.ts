@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  goToLink(url: string): void {
+    window.open(url, '_blank');
+  }
 }
