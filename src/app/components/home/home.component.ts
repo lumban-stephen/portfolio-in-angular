@@ -6,11 +6,6 @@ import { Component, ViewChild } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  isHovered = false;
-  
-  toggleVideo(hovered: boolean): void {
-    this.isHovered = hovered;
-  }
 
   goToLink(url: string): void {
     window.open(url, '_blank');

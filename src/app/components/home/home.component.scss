@@ -57,7 +57,7 @@ ul li img:hover {
 }
 
 h1:hover {
-  color: rgb(224, 224, 224);
+  color: purple;
   transition: 0.3s ease-in-out;
 }
 
@@ -65,20 +65,20 @@ h1:hover {
   color: white;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  opacity: 0; /* Hide video initially */
-  transition: opacity 0.6s ease-in-out;
-}
+// #myVideo {
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   z-index: -1;
+//   opacity: 0; /* Hide video initially */
+//   transition: opacity 0.6s ease-in-out;
+// }
 
-#myVideo.video-active {
-  opacity: 1;
-}
+// #myVideo.video-active {
+//   opacity: 1;
+// }
 
 .container h1 {
   font-size: 128px;
