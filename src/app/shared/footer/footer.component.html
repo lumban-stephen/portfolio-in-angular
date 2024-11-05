@@ -1,16 +1,40 @@
 <div class="vh-30">
     <div class="uls">
-        <ul>
-            <li>Get in touch</li>
-            <li><a href="#">lumbanstephen&#64;gmail.com</a></li>
-            <li><a href="#">stephenlumban&#64;gmail.com</a></li>
-        </ul>
-        <img src="../../../assets/images/whiteLogo.png" alt="logo">
-        <ul>
-            <li>Connect</li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
+      <!-- Left Column for Contact -->
+      <ul>
+        <li>Get in touch</li>
+        <li>
+          <a
+            (click)="copyEmail('lumbanstephen@gmail.com', tooltip1)"
+            matTooltip="{{ tooltipMessage1 }}"
+            matTooltipPosition="above"
+            #tooltip1="matTooltip"
+          >
+            lumbanstephen&#64;gmail.com
+          </a>
+        </li>
+        <li>
+          <a
+            (click)="copyEmail('stephenlumban@gmail.com', tooltip2)"
+            matTooltip="{{ tooltipMessage2 }}"
+            matTooltipPosition="above"
+            #tooltip2="matTooltip"
+          >
+            stephenlumban&#64;gmail.com
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Logo in the Center -->
+      <img src="../../../assets/images/whiteLogo.png" alt="logo" />
+  
+      <!-- Right Column for Social Links -->
+      <ul>
+        <li>Connect</li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
     </div>
-</div>
+  </div>
+  
